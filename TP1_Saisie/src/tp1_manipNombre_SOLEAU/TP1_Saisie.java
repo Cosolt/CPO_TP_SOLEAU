@@ -3,7 +3,7 @@
  * Saisie et manipulation de nombres
  * 22/10/2025
  */
-package tp1_saisie;
+package tp1_manipNombre_SOLEAU;
 
 import java.util.Scanner;
 
