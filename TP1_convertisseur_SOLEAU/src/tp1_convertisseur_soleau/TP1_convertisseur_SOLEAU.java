@@ -18,14 +18,28 @@ public class TP1_convertisseur_SOLEAU {
      */
     
     public static void main(String[] args) {
+        int conversion ;
+        double valeur ;
         double tCelcius; 
         double tKelvin ; 
         double tFarenheit ;
+        
         Scanner sc = new Scanner(System.in);
-        System.out.println("Entrez une valeur :");
-        tCelcius =sc.nextDouble();
-        System.out.println("La température en Kelvin est : " +(tCelcius + 273));
-          
+        System.out.println("Bonjour, saisissez une valeur :");
+        valeur =sc.nextDouble();
+        
+        System.out.println("""
+        Saisissez la conversion que vous souhaitez effectuer :
+        1) De Celcius vers Kelvin
+        2) De Kelvin vers Celcius
+        3) De Farenheit vers Celcius
+        4) De Celcius vers Farenheit
+        5) De Kelvin vers Farenheit
+        6) De Farenheit vers Kelvin """);
+        conversion = sc.nextInt();
+        
+        System.out.print(" La température est " ) ;
+        
     }
     
     
