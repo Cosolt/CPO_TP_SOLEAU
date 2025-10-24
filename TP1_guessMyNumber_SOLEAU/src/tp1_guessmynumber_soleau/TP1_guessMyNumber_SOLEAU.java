@@ -26,7 +26,7 @@ public class TP1_guessMyNumber_SOLEAU {
         
         Scanner sc = new Scanner(System.in);
         Random generateurAleat = new Random();
-        int n = generateurAleat.nextInt(200);
+        int n = generateurAleat.nextInt(100);
         
         System.out.println("""
         Choisissez la difficultée :
@@ -39,30 +39,28 @@ public class TP1_guessMyNumber_SOLEAU {
         
         
         if (niveau == 1) {
-            maxEssais = 20 ;    
+            maxEssais = 10 ;    
         } else if (niveau == 2) {
-            maxEssais = 10 ;         
+            maxEssais = 8 ;         
         } else if (niveau == 3) {
             maxEssais = 5 ;
         }
         
         while ( nombre != n && essais < maxEssais) {
-                    
-            System.out.println("Resaisissez un nombre entre 0 et 100 : ") ;
-            nombre = sc.nextInt();
-             if (nombre < n) {
-                System.out.println(" Trop petit ") ;
-            } else if (nombre < n) {
-                System.out.println(" Trop grand ") ;
+            essais++ ;
+            compteur++ ;
+            if (nombre < n) {
+                System.out.println(" Trop petit ! ") ;
+            } else if (nombre > n) {
+                System.out.println(" Trop grand ! ") ;
             }
-             
+            System.out.println(" Entrez un nouveau nombre : ") ; 
+            nombre = sc.nextInt();
+        }    
         if (nombre == n){
             System.out.println(" Gagné ") ;
-            
         }
-        
-        }
-              
+        System.out.println( compteur ) ;
     }
     
 }
