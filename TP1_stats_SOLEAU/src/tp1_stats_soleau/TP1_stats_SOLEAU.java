@@ -28,7 +28,7 @@ public class TP1_stats_SOLEAU {
         
         for ( i = 0 ; i < m ; i++ ) {
             Random generateurAleat = new Random();
-            int n = generateurAleat.nextInt(7);
+            int n = generateurAleat.nextInt(6);
             tab[n]++ ;
         
             for ( i = 0; i < tab.length; i++) {
