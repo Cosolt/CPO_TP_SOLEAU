@@ -27,7 +27,7 @@ public class TP2_Bieres_SOLEAU {
         BouteilleBiere autreBiere = new BouteilleBiere("Leffe", 6.6,"Abbaye de Leffe") ;
         autreBiere.lireEtiquette();
 
-       System.out.println(autreBiere);  
+        System.out.println(autreBiere);  
         autreBiere.Décapsuler();         
         System.out.println(autreBiere);  
         autreBiere.Décapsuler();  
