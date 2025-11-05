@@ -28,7 +28,7 @@ public class TP2_convertisseurObjet_SOLEAU {
         System.out.println( "71.5 degre Farenheit donne " + conv2.FarenheitVersKelvin(71.5) + " K" ) ;
         System.out.println( " 294.3 K donne " + conv2.KelvinVersCelcius(294.3) + " degre Celcius" ) ;
         
-        System.out.println(conv1) ;
+        System.out.println(conv1);
         System.out.println(conv2) ;
     }
     
