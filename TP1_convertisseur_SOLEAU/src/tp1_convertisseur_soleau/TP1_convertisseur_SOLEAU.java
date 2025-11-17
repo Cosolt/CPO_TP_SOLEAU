@@ -18,7 +18,6 @@ public class TP1_convertisseur_SOLEAU {
      */
     
     public static void main(String[] args) {
-        int conversion ;
         double valeur ;
         double tCelcius; 
         double tKelvin ; 
@@ -36,12 +35,11 @@ public class TP1_convertisseur_SOLEAU {
         4) De Celcius vers Farenheit
         5) De Kelvin vers Farenheit
         6) De Farenheit vers Kelvin """);
-        conversion = sc.nextInt();
+        int choix = sc.nextInt();
         
         System.out.print(" La température est " ) ;
         
     }
-    
     
     public static double CelciusVersKelvin (double tCelcius) {
         return((tCelcius + 273)) ;                            
@@ -60,11 +58,11 @@ public class TP1_convertisseur_SOLEAU {
     }
     
     public static double KelvinVersFarenheit (double tKelvin) {
-        return(CelciusVersFarenheit(tKelvin - 273)) ;
+        return(CelciusVersFarenheit(KelvinVersCelcius(tKelvin))) ;
     }
     
     public static double FarenheitVersKelvin (double tFarenheit) {
-        return(FarenheitVersCelcius (tFarenheit + 273)) ;
+        return(CelciusVersKelvin(FarenheitVersCelcius(tFarenheit))) ;
     }
     
 }
