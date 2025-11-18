@@ -4,9 +4,9 @@
  */
 package tp3_heroic_fantasy_soleau;
 
+import Armes.*;
 import java.util.ArrayList;
 
-import Armes.*;
 
 /**
  *
@@ -33,6 +33,12 @@ public class TP3_Heroic_Fantasy_SOLEAU {
         for (int i = 0; i < armes.size(); i++) {
             System.out.println(armes.get(i));
         }    
+        
+        Magicien Gandalf = new Magicien("Gandalf", 65, confirme) ;
+        Magicien Garcimore = new Magicien("Garcimore", 44, novice) ;
+        
+        Guerrier Conan = new Guerrier("Conan", 78, à pied) ;
+        Guerrier Lannister = new Guerrier("Lannister", 45, à cheval) ;
     }
     
 }
