@@ -2,23 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_soleau;
+package Personnages;
 
 /**
  *
  * @author colin
  */
-public class Magicien extends Personnage {
-    boolean confirme ;
+public class Guerrier extends Personnage {
+    boolean cheval ; 
     
-    public Magicien(String nom, int niveauVie, boolean confirme) {
+    public Guerrier(String nom, int niveauVie, boolean cheval) {
         super(nom, niveauVie);
     }
 
-    public void setConfirme(boolean confirme) {
-        this.confirme = confirme;
+    public void setCheval(boolean cheval) {
+        this.cheval = cheval;
     }
-    
     
     
     

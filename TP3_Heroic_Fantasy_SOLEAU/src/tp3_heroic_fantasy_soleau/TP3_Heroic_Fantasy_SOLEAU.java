@@ -4,6 +4,7 @@
  */
 package tp3_heroic_fantasy_soleau;
 
+import Personnages.*;
 import Armes.*;
 import java.util.ArrayList;
 
@@ -34,6 +35,8 @@ public class TP3_Heroic_Fantasy_SOLEAU {
             System.out.println(armes.get(i));
         }
         
+        
+        
         Magicien Gandalf = new Magicien("Gandalf", 65, true) ;
         Magicien Garcimore = new Magicien("Garcimore", 44, false) ;
         
@@ -49,6 +52,8 @@ public class TP3_Heroic_Fantasy_SOLEAU {
         for (int i = 0; i < personnages.size(); i++) {
             System.out.println(personnages.get(i));
         }
+        
+        
         
         
         
