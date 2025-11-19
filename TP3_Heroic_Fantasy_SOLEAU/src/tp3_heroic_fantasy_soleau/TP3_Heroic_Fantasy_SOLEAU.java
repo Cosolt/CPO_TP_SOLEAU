@@ -32,13 +32,26 @@ public class TP3_Heroic_Fantasy_SOLEAU {
 
         for (int i = 0; i < armes.size(); i++) {
             System.out.println(armes.get(i));
-        }    
+        }
         
-        Magicien Gandalf = new Magicien("Gandalf", 65, confirme) ;
-        Magicien Garcimore = new Magicien("Garcimore", 44, novice) ;
+        Magicien Gandalf = new Magicien("Gandalf", 65, true) ;
+        Magicien Garcimore = new Magicien("Garcimore", 44, false) ;
         
-        Guerrier Conan = new Guerrier("Conan", 78, à pied) ;
-        Guerrier Lannister = new Guerrier("Lannister", 45, à cheval) ;
+        Guerrier Conan = new Guerrier("Conan", 78, false) ;
+        Guerrier Lannister = new Guerrier("Lannister", 45, true) ;
+        
+        ArrayList<Personnage> personnages = new ArrayList<>();
+        personnages.add(Gandalf);
+        personnages.add(Garcimore);
+        personnages.add(Conan);
+        personnages.add(Lannister);
+        
+        for (int i = 0; i < personnages.size(); i++) {
+            System.out.println(personnages.get(i));
+        }
+        
+        
+        
     }
     
 }
